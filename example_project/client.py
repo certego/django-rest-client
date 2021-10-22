@@ -1,4 +1,5 @@
 from django_rest_client import APIClient
+from django_rest_client.types import THeaders
 
 from .resources import ExampleResource, ExampleSingletonResource
 
@@ -8,9 +9,9 @@ class ExampleClient(APIClient):
     _server_url: str = "https://fake_url.com/"
 
     @property
-    def _headers(self):
+    def _headers(self) -> THeaders:
         return {
-            "Authorization": f"Token {self.__token}",
+            **super()._headers,
             "User-Agent": "ExampleClient",
         }
 
