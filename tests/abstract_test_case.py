@@ -141,11 +141,11 @@ class APIResourceBaseTestCase(TestCase):
         page_iter_fn = getattr(self.resource, "auto_paging_iter", None)
         if page_iter_fn:
             # a) ok
-            for response in page_iter_fn():
+            for response, page in page_iter_fn():
                 self.assertEqual(200, response.code)
             # b) error
             with self.assertRaises(APIClientException):
-                for response in page_iter_fn():
+                for response, page in page_iter_fn():
                     self.assertEqual(200, response.code)
 
     @if_mock_connections(
