@@ -17,7 +17,7 @@ Please delete options that are not relevant.
 # Checklist
 
 - [ ] The pull request is for the branch develop
-- [ ] I have added tests in the [Tests](https://github.com/certego/drf-client/tree/main/tests) folder.
+- [ ] I have added tests in the [Tests](https://github.com/certego/django-rest-client/tree/main/tests) folder.
 - [ ] The tests gave 0 errors.
 - [ ] `Black` gave 0 errors.
 - [ ] `Flake` gave 0 errors.

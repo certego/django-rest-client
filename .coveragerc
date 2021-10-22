@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = drf_client
+source = django_rest_client
 
 [report]
 exclude_lines =

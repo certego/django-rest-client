@@ -1,14 +1,14 @@
-# DRF-client
+# django-rest-client
 
-[![PyPI version](https://badge.fury.io/py/drf-client.svg)](https://badge.fury.io/py/drf-client)
-[![PyPI Supported Python Versions](https://img.shields.io/pypi/pyversions/drf-client.svg)](https://pypi.python.org/pypi/drf-client/)
+[![PyPI version](https://badge.fury.io/py/django-rest-client.svg)](https://badge.fury.io/py/django-rest-client)
+[![PyPI Supported Python Versions](https://img.shields.io/pypi/pyversions/django-rest-client.svg)](https://pypi.python.org/pypi/django-rest-client/)
 
-[![Lint & Tests](https://github.com/certego/drf-client/workflows/Lint%20&%20Tests/badge.svg)](https://github.com/certego/drf-client/actions)
-[![codecov](https://codecov.io/gh/certego/drf-client/branch/main/graph/badge.svg?token=KBk4rQj08b)](https://codecov.io/gh/certego/drf-client)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/certego/drf-client.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/certego/drf-client/context:python)
-[![CodeFactor](https://www.codefactor.io/repository/github/certego/drf-client/badge)](https://www.codefactor.io/repository/github/certego/drf-client)
+[![Lint & Tests](https://github.com/certego/django-rest-client/workflows/Lint%20&%20Tests/badge.svg)](https://github.com/certego/django-rest-client/actions)
+[![codecov](https://codecov.io/gh/certego/django-rest-client/branch/main/graph/badge.svg?token=KBk4rQj08b)](https://codecov.io/gh/certego/django-rest-client)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/certego/django-rest-client.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/certego/django-rest-client/context:python)
+[![CodeFactor](https://www.codefactor.io/repository/github/certego/django-rest-client/badge)](https://www.codefactor.io/repository/github/certego/django-rest-client)
 
-An abstract and extensible implementation of python SDK and CLI for APIs built with [django-rest-framework](https://github.com/encode/django-rest-framework) and other such general frameworks.
+An abstract and extensible framework for building python SDK and CLI for APIs built with [django-rest-framework](https://github.com/encode/django-rest-framework) and other such general frameworks.
 
 For rapid building of ease-of-use, type-hinted and self-documented API clients in python.
 
@@ -17,20 +17,20 @@ For rapid building of ease-of-use, type-hinted and self-documented API clients i
 Requires python version >=3.6.
 
 ```bash
-$ pip3 install drf_client
+$ pip3 install django_rest_client
 ```
 
-- For usage with [click](https://github.com/pallets/click), `pip3 install drf_client[cli]`
-- For development/testing, `pip3 install drf_client[dev]`
+- For usage with [click](https://github.com/pallets/click), `pip3 install django_rest_client[cli]`
+- For development/testing, `pip3 install django_rest_client[dev]`
 
 ## Documentation
 
-> [pydragonfly](https://github.com/certego/pydragonfly) is a complete project built on top of DRF-client and serves as a good frame of reference for developers.
+> [pydragonfly](https://github.com/certego/pydragonfly) is a complete project built on top of django-rest-client and serves as a good frame of reference for developers.
 
-- Code reference: Please see [`example_project`](https://github.com/certego/drf-client/tree/main/example_project).
-- CLI Example: Open a terminal and run `drf_client_example -h`.
-- Changelog: [CHANGELOG.md](https://github.com/certego/drf-client/blob/main/.github/CHANGELOG.md)
+- Code reference: Please see [`example_project`](https://github.com/certego/django-rest-client/tree/main/example_project).
+- CLI example: Open a terminal and run `django_rest_client_example -h`.
+- Changelog: [CHANGELOG.md](https://github.com/certego/django-rest-client/blob/main/.github/CHANGELOG.md)
 
-## Projects using drf-client
+## Projects using django-rest-client
 
 - [pydragonfly](https://github.com/certego/pydragonfly)
