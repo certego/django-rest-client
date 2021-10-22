@@ -45,7 +45,7 @@ class APIClient(metaclass=ABCMeta):
 
     @property
     def _headers(self) -> THeaders:
-        return {"User-Agent": f"APIClient (/django_rest_client,{VERSION})"}
+        return {"User-Agent": f"APIClient (django_rest_client,{VERSION})"}
 
     @property
     def __session(self) -> requests.Session:
