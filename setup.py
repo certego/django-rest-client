@@ -14,7 +14,7 @@ requirements_cli = ["click"]
 requirements_dev = (HERE / "requirements.dev.txt").read_text().split("\n")
 # read version
 version_contents = {}
-with open((HERE / "/django_rest_client" / "version.py"), encoding="utf-8") as f:
+with open((HERE / "django_rest_client" / "version.py"), encoding="utf-8") as f:
     exec(f.read(), version_contents)
 
 # This call to setup() does all the work

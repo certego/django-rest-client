@@ -1,7 +1,12 @@
+# lint
 black==20.8b1
 flake8==3.9.1
 pre-commit==2.12.1
+# tests
 tox==3.23.0
 tox-gh-actions==2.5.0
+# coverage
 codecov
 coverage
+# cli
+click_creds==0.0.3

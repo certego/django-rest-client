@@ -1,5 +1,5 @@
-from .abstract_test_case import APIResourceBaseTestCase, APIResource
-from .mock_utils import generic_200_mock, generic_201_mock
+from tests.abstract_test_case import APIResourceBaseTestCase, APIResource
+from tests.mock_utils import generic_200_mock, generic_201_mock
 
 
 class ExampleResourceTestCase(APIResourceBaseTestCase):

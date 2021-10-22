@@ -4,7 +4,7 @@
 [![PyPI Supported Python Versions](https://img.shields.io/pypi/pyversions/django-rest-client.svg)](https://pypi.python.org/pypi/django-rest-client/)
 
 [![Lint & Tests](https://github.com/certego/django-rest-client/workflows/Lint%20&%20Tests/badge.svg)](https://github.com/certego/django-rest-client/actions)
-[![codecov](https://codecov.io/gh/certego/django-rest-client/branch/main/graph/badge.svg?token=KBk4rQj08b)](https://codecov.io/gh/certego/django-rest-client)
+[![codecov](https://codecov.io/gh/certego/django-rest-client/branch/main/graph/badge.svg?token=TWGZt6zfRD)](https://codecov.io/gh/certego/django-rest-client)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/certego/django-rest-client.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/certego/django-rest-client/context:python)
 [![CodeFactor](https://www.codefactor.io/repository/github/certego/django-rest-client/badge)](https://www.codefactor.io/repository/github/certego/django-rest-client)
 
