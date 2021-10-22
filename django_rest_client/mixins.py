@@ -1,4 +1,4 @@
-from typing import Optional, Generator
+from typing import Tuple, Optional, Generator
 
 from .api_response import APIResponse
 from .types import Toid, TParams
@@ -68,14 +68,14 @@ class PaginationAPIResourceMixin:
     def auto_paging_iter(
         cls,
         params: Optional[TParams] = None,
-    ) -> Generator[APIResponse, None, None]:
+    ) -> Generator[Tuple[APIResponse, int], None, None]:
         _params = params or {}  # default value
         response = cls.list(params=dict(_params, page=1))
-        yield response  # yield first page
+        yield response, 1  # yield first page
         total_pages = response.data.get("total_pages", 1)
         for page in range(2, total_pages + 1):
             response = cls.list(params=dict(_params, page=page))
-            yield response  # yield subsequent pages
+            yield response, page  # yield subsequent pages
 
 
 class SingletonAPIResourceMixin:
