@@ -6,7 +6,13 @@ from .resources import ExampleResource, ExampleSingletonResource
 class ExampleClient(APIClient):
     # overwrite
     _server_url: str = "https://fake_url.com/"
-    _headers = {"User-Agent": "ExampleClient"}
+
+    @property
+    def _headers(self):
+        return {
+            "Authorization": f"Token {self.__token}",
+            "User-Agent": "ExampleClient",
+        }
 
     # resources
     ExampleResource = ExampleResource

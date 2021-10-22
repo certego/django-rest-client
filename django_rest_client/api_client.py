@@ -12,6 +12,12 @@ from .version import VERSION
 
 
 class APIClient(metaclass=ABCMeta):
+    """
+    Abstract ``APIClient`` class.
+    Should be subclassed overwriting the ``_server_url``, ``_headers`` properties
+    and attaching ``APIResource`` classes.
+    """
+
     _logger: logging.Logger = logging.getLogger(__name__)
 
     def __init__(
@@ -45,7 +51,10 @@ class APIClient(metaclass=ABCMeta):
 
     @property
     def _headers(self) -> THeaders:
-        return {"User-Agent": f"APIClient (django_rest_client,{VERSION})"}
+        return {
+            "Authorization": f"Token {self.__token}",
+            "User-Agent": f"APIClient (django_rest_client,{VERSION})",
+        }
 
     @property
     def __session(self) -> requests.Session:
@@ -56,12 +65,7 @@ class APIClient(metaclass=ABCMeta):
             session = requests.Session()
             if self.__certificate is not None:
                 session.verify = self.__certificate
-            session.headers.update(
-                {
-                    "Authorization": f"Token {self.__token}",
-                    **self._headers,
-                }
-            )
+            session.headers.update(self._headers)
             self.__cached_session = session
 
         return self.__cached_session
