@@ -36,3 +36,7 @@ $ pip3 install django_rest_client
 ## Projects using django-rest-client
 
 - [pydragonfly](https://github.com/certego/pydragonfly)
+
+## License
+
+BSD © [certego](https://github.com/certego)
