@@ -21,7 +21,7 @@ with open((HERE / "django_rest_client" / "version.py"), encoding="utf-8") as f:
 setup(
     name="django_rest_client",
     version=version_contents["VERSION"],
-    description="An abstract and extensible framework for building python SDK and CLI for APIs built with django-rest-framework and other such general frameworks.",
+    description="An abstract and extensible framework for building client SDKs and CLI tools for a RESTful API.",
     long_description=README,
     long_description_content_type="text/markdown",
     url=GITHUB_URL,

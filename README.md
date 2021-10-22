@@ -8,7 +8,9 @@
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/certego/django-rest-client.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/certego/django-rest-client/context:python)
 [![CodeFactor](https://www.codefactor.io/repository/github/certego/django-rest-client/badge)](https://www.codefactor.io/repository/github/certego/django-rest-client)
 
-An abstract and extensible framework for building python SDK and CLI for APIs built with [django-rest-framework](https://github.com/encode/django-rest-framework) and other such general frameworks.
+An abstract and extensible framework in python for building client SDKs and CLI tools for a RESTful API.
+
+Suitable for APIs made with [django-rest-framework](https://github.com/encode/django-rest-framework) and other such general frameworks.
 
 For rapid building of ease-of-use, type-hinted and self-documented API clients in python.
 
